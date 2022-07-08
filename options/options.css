@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+    padding: .25rem;
+    font-size: 16px;
+    line-height: 1.25rem;
+    color: #444444;
+}
+
+.main {
+    padding-bottom: 1rem;
+    border: 2px solid blanchedalmond;
+    text-align: center;
+}
+
+h1 {
+    padding: 1rem 0;
+    margin-bottom: 1.5rem;
+    background-color: blanchedalmond;
+}
+
+.separator {
+    margin: 4rem;
+}
+
+.separator img {
+    margin: 0 8px;
+}
+
+.options {
+    width: 50%;
+    margin: 4rem auto;
+}
+
+.option {
+    display: flex;
+    margin: 0.5rem 0;
+    text-align: left;
+}
+
+.option label {
+    margin-right: 2rem;
+}
+
+.option input[type="checkbox"] {
+    margin-left: auto;
+}
+
+label, input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.credits {
+    font-size: 0.75rem;
+}

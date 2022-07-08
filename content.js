@@ -16,7 +16,7 @@ const keywords = [
 ];
 const uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const lowercase = 'abcdefghijklmnopqrstuvwxyz';
-const debug = false;
+const debug = chrome.storage.sync.get("debug");
 
 let timer = setInterval(function() {
     for (let keyword of keywords) {
@@ -36,15 +36,15 @@ let timer = setInterval(function() {
         if (debug) console.log('element : ', element);
 
         if (element === null) {
-            if (debug) console.log('element is null, move on');
+            if (debug) console.log('No cookie button element has been found, abort the mission.');
             return;
         }
 
-        if (debug) console.log('element is not null, continue');
+        if (debug) console.log('Coookie button element has been found, continue the mission.');
 
         element.click();
     
-        if (debug) console.log('Consent has been revoked');
+        if (debug) console.log('Consent has been revoked :)');
         stopTryin();
     }
     
@@ -53,7 +53,7 @@ let timer = setInterval(function() {
 
 function stopTryin() {
     window.clearInterval(timer);
-    if (debug) console.log('timer cleared');
+    if (debug) console.log('Timer cleared');
 }
 
 setTimeout(stopTryin, 5000);

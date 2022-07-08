@@ -3,6 +3,10 @@
     "description": "Automatically disagrees with GDPR cookie",
     "version": "1.0.0",
     "manifest_version": 3,
+    "permissions": ["storage"],
+    "background": {
+      "service_worker": "background.js"
+    },
     "content_scripts": [
       {
         "matches": ["https://*/*", "http://*/*"],
@@ -18,6 +22,7 @@
         "128": "/images/cookie_disagree_128.png"
       }
     },
+    "options_page": "options/options.html",
     "icons": {
       "16": "/images/cookie_disagree_16.png",
       "32": "/images/cookie_disagree_32.png",
