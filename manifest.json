@@ -1,0 +1,12 @@
+{
+    "name": "Cookie disagree",
+    "description": "Automatically disagrees with GDPR cookie",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "content_scripts": [
+      {
+        "matches": ["https://*/*", "http://*/*"],
+        "js": ["content.js"]
+      }
+    ]
+}
