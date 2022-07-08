@@ -8,5 +8,11 @@
         "matches": ["https://*/*", "http://*/*"],
         "js": ["content.js"]
       }
-    ]
+    ],
+    "icons": {
+      "16": "/images/cookie_disagree_16.png",
+      "32": "/images/cookie_disagree_32.png",
+      "48": "/images/cookie_disagree_48.png",
+      "128": "/images/cookie_disagree_128.png"
+    }
 }
